@@ -2,7 +2,7 @@
 
 **IMPORTANT:** If `/demo` previously showed 404, use `RUN_ON_MAC.md` and run this **fixed** folder, not the earlier `claimspire_admin_backend` folder. The main `/` path now opens the demo too.
 
-# ClaimSpire Admin Backend — Local Prototype
+# ClaimSpire Admin — Prototype
 
 A **working FastAPI backend** for an illustrative ClaimSpire Admin product surface. It uses **SQLite by default**, includes a **synthetic demo dataset**, and runs with **no AWS account, credentials, or cloud integrations**.
 
