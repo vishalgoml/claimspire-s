@@ -1,3 +1,5 @@
+<img width="1536" height="960" alt="Screenshot 2026-10-16 at 9 54 13 PM" src="https://github.com/user-attachments/assets/9c715cfc-b5e8-4f4e-bc4f-329ed7754596" />
+
 **IMPORTANT:** If `/demo` previously showed 404, use `RUN_ON_MAC.md` and run this **fixed** folder, not the earlier `claimspire_admin_backend` folder. The main `/` path now opens the demo too.
 
 # ClaimSpire Admin Backend — Local Prototype
