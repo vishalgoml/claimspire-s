@@ -4,7 +4,8 @@ This is an **extension of `ClaimSpire_Admin_Demo_FIXED`**. It adds the organizat
 
 **v0.3.1 stabilizations:** email/password login (no hardcoded account dropdown), organization type at registration, `REGISTERED`→activate lifecycle, privileged `TENANT_IT_ADMIN` provisioning limited to Platform Ops, versioned setup submission snapshots, hardened multi-tenant API isolation (incl. suspended-tenant block), expanded API tests (25).
 
-**Customer demo / multi-tenant walkthrough:** see `lead_documents/09_MULTI_TENANT_AND_CUSTOMER_DEMO.md`.
+**Customer demo / multi-tenant walkthrough:** see `lead_documents/09_MULTI_TENANT_AND_CUSTOMER_DEMO.md`.  
+**Team meeting speaking script (natural call script + Q&A):** see `lead_documents/10_TEAM_MEETING_SPEAKING_SCRIPT.md`.
 
 ## Run on Mac
 

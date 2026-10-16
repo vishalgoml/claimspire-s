@@ -1,7 +1,9 @@
 # Senior Architect Talk Track — ClaimSpire Admin v0.3
 
 **Use:** 5–8 minute briefing (or 30-minute kickoff with demo).  
-**Companion:** `07_COMPLETE_ADMIN_EXPLANATION.md` for depth; `01`–`06` for proposal, journeys, roadmap, blockers, architecture.
+**Companion:** `07_COMPLETE_ADMIN_EXPLANATION.md` for depth; `01`–`06` for proposal, journeys, roadmap, blockers, architecture.  
+**Full natural call script with cross-questions:** `10_TEAM_MEETING_SPEAKING_SCRIPT.md`.  
+**Click-path customer demo:** `09_MULTI_TENANT_AND_CUSTOMER_DEMO.md`.
 
 ---
 
