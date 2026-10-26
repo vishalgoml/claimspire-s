@@ -8,5 +8,6 @@ __pycache__/
 *.pyc
 lead_documents/
 tests/
+docs/
 RUN_ON_MAC.md
 START_HERE_v3.md
