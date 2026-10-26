@@ -1,5 +1,3 @@
-**IMPORTANT:** If `/demo` previously showed 404, use `RUN_ON_MAC.md` and run this **fixed** folder, not the earlier `claimspire_admin_backend` folder. The main `/` path now opens the demo too.
-
 # ClaimSpire Admin Backend — Local Prototype
 
 A **working FastAPI backend** for an illustrative ClaimSpire Admin product surface. It uses **SQLite by default**, includes a **synthetic demo dataset**, and runs with **no AWS account, credentials, or cloud integrations**.
@@ -7,9 +5,7 @@ A **working FastAPI backend** for an illustrative ClaimSpire Admin product surfa
 > **Scope:** High-level admin navigation and CRUD for administrative configuration, plus read-only cross-domain operations. This is a demonstration and planning baseline, **not** a fully approved Phase 1 requirement set, carrier claim system, real financial ledger, real authentication provider, or production implementation.
 
 
-## v0.3 — Organization onboarding and workforce lifecycle extension
-
-Two extra navigation pages have been added to the earlier fixed Admin demo:
+## v0.3 — Organization onboarding and workforce lifecycle
 
 - **Organization Setup:** Demonstrates the Carrier/TPA versus IA firm choice, accountable setup owner, five **provisional** data-collection groups, missing-details validation, submit-for-review, and a review decision. The demo temporarily uses Platform Operations as approver, with maker-checker protection; this is not a confirmed client role. Approval marks the local setup record only; it does not activate real tenants or provision infrastructure.
 - **Workforce Lifecycle:** Displays organization teams, allows creating simple team records, shows user availability, supports **AVAILABLE → UNAVAILABLE → AVAILABLE** and **AVAILABLE/UNAVAILABLE → OFFBOARDED** transitions, requires a reason, and creates audit/lifecycle history. Offboarding disables the local login. **No automatic claims reassignment, dispatch, HR integration, or data deletion** is performed.
@@ -119,38 +115,3 @@ For local PostgreSQL instead, install a PostgreSQL driver (`pip install 'psycopg
 - Read-only claim/dispatch/QA/finance entries are synthetic admin dashboard representations, not an authoritative operational domain model.
 - The signed ClaimSpire SOW centers the Phase 1 **Internal Admin UI** on Platform Operations AI/governance controls, while separately including **managed initial tenant activation**. Broader admin modules in this demo are deliberately assumed for prototyping; they must not be presented as signed Phase 1 commitments.
 - Local JWT/password handling, authorization, audit and toggles are **development simulators**, not a substitute for production-grade identity, PDP, security review, RLS, key management, append-only forensic audit, or controlled approvals.
-
-## 7. Project structure
-
-```text
-claimspire_admin_backend/
-├── app/
-│   ├── main.py                 # app, lifespan, Swagger, router registration
-│   ├── config.py               # .env-based local settings
-│   ├── database.py             # SQLAlchemy engine/session
-│   ├── models.py               # demo tenant/user/config/overview entities
-│   ├── schemas.py              # Pydantic input/output contracts
-│   ├── security.py             # local JWT, role and tenant checks
-│   ├── helpers.py              # writes, audit and scoping utilities
-│   ├── seed.py                 # 16 personas + synthetic business data
-│   └── routers/
-│       ├── auth.py
-│       ├── tenants.py
-│       ├── people.py
-│       ├── configuration.py
-│       ├── operations.py
-│       └── audit.py
-├── docs/
-│   ├── ADMIN_SCREENS.md
-│   ├── API_CATALOG.md
-│   ├── ARCHITECTURE.md
-│   └── IMPLEMENTATION_PLAN.md
-├── tests/
-│   ├── conftest.py
-│   └── test_api.py
-├── app/static/                 # browser-based demo Admin UI
-├── openapi.json
-├── requirements.txt
-├── requirements-dev.txt
-└── .env.example
-```

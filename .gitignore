@@ -6,3 +6,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 *.pyc
+lead_documents/
+tests/
+RUN_ON_MAC.md
+START_HERE_v3.md
